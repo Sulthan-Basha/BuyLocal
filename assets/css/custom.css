@@ -1,7 +1,18 @@
+body {font-family: Roboto,sans-serif;}
+h1, h2, h3, h4, h5, h6 {color:#000;}
+@media (min-width: 1200px) {
+.container {
+    max-width: 1200px;
+}
+}
 .navigation-bar {background-color:#fff; float:left; padding:10px 20px;}
 .header-section {overflow:hidden;}
-.header-section h3 {margin:20px 0px;text-transform: uppercase;
-    line-height: 42px;font-family: 'Poppins', sans-serif; font-weight:400; font-size:27px; }
+.header-section h3 {margin:20px 0px 10px;text-transform: uppercase;
+    line-height: 42px; font-weight:600; font-size:26px; color:#000;}
+    .header-section  h4 {font-size: 21px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 30px;}
     .header-section h3 span {font-weight:600;}
 .header-section .main-btn {margin-bottom:20px;}
 video {
@@ -12,14 +23,15 @@ video {
 .main-logo {overflow:hidden;}
 .main-logo img {width:250px;}
 
+.about-area {background-color:#f5f5f5;}
 .about-content ul{list-style: none; margin-top:15px; margin-left:20px;}
 .about-content ul li {line-height:30px; font-size:17px;}
   .about-content ul li:before{
     content: '\f0a9';
     margin-right: 15px;
-    font-family: FontAwesome; color:#EB3656;
+    font-family: FontAwesome; color:#006680;
   }
-
+.about-content .about-title {color:#006680;}
 
 /*  Services CSS */
 .services-icon {width: 100px;
@@ -28,42 +40,24 @@ video {
 .single-services {min-height: 350px;}
 .single-services  .services-icon img {width:60px; transition:all .2s ease-in-out;}
 .single-services:hover .services-icon img {margin-top:-10px; width:80px;}
-.single-services:hover .services-content h4 {color:#EB3656;}
+.single-services:hover .services-content h4 {color:#006680;}
 
 
 /* Call To Action */
 
 .call-to-action {overflow:hidden; background:url("../images/calltoaction.jpg"); background-repeat: no-repeat; background-size:cover;}
 .calltoaction { background-color:rgba(0, 0, 0, 0.8); padding:40px 0; text-align:center;}
-.calltoaction h2 {color:#fff; margin-bottom:20px; }
-.calltoaction h4 {color:#fff; line-height:38px;}
+.calltoaction h2 {color:#fff; margin-bottom:0px; display:block; }
+.calltoaction h4 {color:#fff; line-height:38px; display:block;}
+.calltoaction img {width:160px;}
+.calltoaction h2 span {padding:5px 10px; background-color:#fff; color:#006680;}
 
 /*  Steps CSS */
 .steps-step {overflow:hidden;}
-.steps-step .single-image {width: 300px;
-    transform: rotate(-25deg);}
+.steps-step .single-image {width: 500px;}
 
-.steps-step .communication .single-image {margin-top: 100px; margin-left:100px;}
-.steps-step .preferences .single-image {margin-top: 15px; margin-left:100px;}
-.steps-step .sendinvitation .single-image {margin-top: 30px; margin-left:100px;}
 .steps-step p {margin-left:15px;}
-.steps-step .about-image::before {
-      position: absolute;
-      content: '';
-      background-image: url(../images/bg.png);
-      background-position: center center;
-      background-size: 100%;
-      width: 650px;
-      height: 500px;
-      left: 244px;
-      top: 230px;
-      opacity: 0.1;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      z-index: -1; }
+
 .steps-step .about-content .about-title {position:relative;}
 .steps-step .about-content .about-title span {position: absolute;
     left: -55px;
@@ -90,7 +84,7 @@ video {
   display: block;
   position: absolute;
   height: 3px;
-  background: #EB3656;;
+  background: #006680;;
   width: 60px;
   left: 5%;
   top: 90%;
@@ -123,7 +117,7 @@ video {
 display: block;
 position: absolute;
 height: 3px;
-background: #EB3656;;
+background: #006680;;
 width: 100%;
 left: 0%;
 bottom:0px;}
@@ -131,13 +125,13 @@ bottom:0px;}
 
 .plus {
   color:#fff;
-  width:25px; height:25px; background-color:#EB3656; border-radius:50%;
+  width:25px; height:25px; background-color:#006680; border-radius:50%;
   position: absolute;
   margin-left: 10px;
   margin-top: 5px;
   z-index: 5;
   font-size: 28px;
-  line-height: 100%; padding-left:5px; font-weight:600; padding-top:1px;
+  line-height: 23px; padding-left:5px; font-weight:600; padding-top:1px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -154,21 +148,77 @@ bottom:0px;}
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-   padding-left:4px; padding-top:1px;
+   padding-left:5px; padding-top:1px;
 }
 
 .questions {
   display: none;
 }
 
+
+/* Whys Choose Us */
+.why-choose-banner img{filter:drop-shadow(2px 2px 4px gray);}
+
+.y-us-section {
+    padding: 82px 0 82px;
+}
+
+.y-us-title-border {
+    background: #ffae11 none repeat scroll 0 0;
+    border-radius: 2px;
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    width: 50px;
+}
+.service-3 .service-box {
+    margin-bottom: 18px;
+}
+.service-3 .service-box .iconset {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.service-3 .service-box .iconset i {
+    color: #000;
+    font-size: 44px;
+}
+.service-3 .service-box .y-us-content {
+    float: left;
+    width: 75%;
+}
+.service-3 .service-box .y-us-content h4 {line-height:32px;}
+
+.service-3 .service-box .y-us-content p {
+    color: #777777;
+    font-size: 15px !important;
+    font-weight: 300;
+    line-height: 24px !important;
+}
+
+.icon {
+    padding:0px;
+    border: 1px solid #006680;
+    border-radius: 100px;
+    color: #006680;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
+.why-us{background-color:#f5f5f5; overlow:hidden;}
+
+.y-us-section .container.info p{font-size:18px; line-height:32px;}
+.y-us-section .container.info {overflow:hidden;}
 /* Map Section */
 .map-bg {background-color:rgba(0, 0, 0, 0.7); padding:125px 80px;}
 .map-bg img {width:300px; margin:30px auto;}
 .contact-info {overflow:hidden; float:left; margin-left:20px;}
-.contact-info i {font-size:22px; text-align:left; width:35px; height:35px; line-height:35px; background-color:#fff; color:#EB3656; border-radius:50%;}
+.contact-info i {font-size:22px; text-align:left; width:35px; height:35px; line-height:35px; background-color:#fff; color:#006680; border-radius:50%;}
 .contact-info span {font-size:20px; margin-left:10px;font-family: 'Poppins', sans-serif; text-align:left; color:#fff; line-height:45px;}
 .contact-info .fa-phone {padding:0 10px;}
 .contact-info .fa-map-marker {padding:0 12px;}
 .contact-info .fa-envelope {padding:0 7px;}
 .footer-social li {float:left;}
-.footer-social li i {width:30px; height:30px; line-height:30px; background-color:#EB3656; color:#fff; border-radius:50%; padding:0 7px; margin-right:10px;}
+.footer-social li i {width:30px; height:30px; line-height:30px; background-color:#006680; color:#fff; border-radius:50%; padding:0 7px; margin-right:10px;}

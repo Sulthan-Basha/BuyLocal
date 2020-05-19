@@ -62,10 +62,10 @@ video {
 .steps-step .about-content .about-title {position:relative;}
 .steps-step .about-content .about-title span {position: absolute;
     left: -55px;
-    top: -85px;
+    top: -75px;
     opacity: 0.15;
     font-family: 'Poppins', sans-serif;
-    font-size: 700%;}
+    font-size: 600%;}
 .steps-step .about-content ul li {text-indent: -30px; margin-left: 17px;}
 
 /* FAQ  */

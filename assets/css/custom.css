@@ -366,3 +366,27 @@ bottom:0px;}
   padding: 0px 15px;
   line-height: 50px;}
   .footermenulist ul li a{color:#fff !important}
+
+/* Media Queries */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .steps-step .single-image {width:50%; margin-top:50px;}
+  .why-choose-banner {padding-top:60px;}
+  .about-image .single-image {margin-top:40px; width:75%;}
+  .mt-150 {
+    margin-top: 60px;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+.ml-200 {
+    margin-left: 10px;
+}
+.steps-step .single-image {
+    width: 320px;
+}
+
+.ml-50 {
+    margin-left: 0px;
+}
+}

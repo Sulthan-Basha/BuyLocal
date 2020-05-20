@@ -623,7 +623,7 @@ p {
       .about-image::before {
         display: block; } }
   .about-image .single-image {
-    width: 460px; }
+    width: 65%; }
     @media only screen and (min-width: 992px) and (max-width: 1200px) {
       .about-image .single-image {
         width: 280px; } }

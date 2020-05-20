@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {color:#000;}
     margin: 0 auto;
     line-height: 30px;}
     .header-section h3 span {font-weight:600;}
+    .invitenumber h3 span {left:-26px !important;}
 .header-section .main-btn {margin-bottom:20px;}
 video {
   width: 100% !important;
@@ -57,7 +58,7 @@ video {
 
 /*  Steps CSS */
 .steps-step {overflow:hidden;}
-.steps-step .single-image {width: 500px;}
+/* .steps-step .single-image {width: 500px;} */
 
 .steps-step p {margin-left:15px;}
 
@@ -69,6 +70,7 @@ video {
     font-family: 'Poppins', sans-serif;
     font-size: 500%;}
 .steps-step .about-content ul li {text-indent: -30px; margin-left: 17px;}
+.tochoose .single-image {width:65%;}
 
 /* FAQ  */
 

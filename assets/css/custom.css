@@ -5,6 +5,8 @@ h1, h2, h3, h4, h5, h6 {color:#000;}
     max-width: 1300px;
 }
 }
+.red {color:red; text-transform:uppercase;}
+.green {color:green; text-transform:uppercase;}
 .navigation-bar {background-color:#fff; float:left; padding:10px 20px;}
 .header-section {overflow:hidden;}
 .header-section h3 {margin:20px 0px 10px;text-transform: uppercase;
@@ -65,7 +67,7 @@ video {
     top: -75px;
     opacity: 0.15;
     font-family: 'Poppins', sans-serif;
-    font-size: 600%;}
+    font-size: 500%;}
 .steps-step .about-content ul li {text-indent: -30px; margin-left: 17px;}
 
 /* FAQ  */

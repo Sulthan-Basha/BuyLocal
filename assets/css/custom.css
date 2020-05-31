@@ -19,8 +19,8 @@ h1, h2, h3, h4, h5, h6 {color:#000;}
     .invitenumber h3 span {left:-26px !important;}
 .header-section .main-btn {margin-bottom:20px;}
 video {
-  width: 100% !important;
-  height: auto !important;
+  width: 65%;
+  margin:0 auto;
 }
 .navigation-bar, .header-banner {background-color:#f5f5f5;}
 

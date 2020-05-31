@@ -90,9 +90,12 @@
         </div> <!-- navigation bar -->
 
         <div class="clearfix"></div>
-        <!-- <div class="header-banner d-flex align-items-center">
+        <div class="header-banner d-flex align-items-center">
           <div class="container">
-              <video src="assets/images/buylocal.mp4" width="100%" height="auto" loop autoplay muted controls></video>
+              <video controls="controls" autoplay>
+        <source src="assets/images/BuyLocal.mp4#t=2" type="video/mp4">
+        Your browser does not support the HTML5 Video element.
+    </video>
           </div>
 
         </div> <!-- header banner -->
@@ -470,7 +473,7 @@ and <span class="red">You</span> are in control ....</p>
                   </div>
                   <div class="col-lg-6">
                       <div class="about-image clearfix preferences">
-                          <div class="single-image pt-50 pb-30">
+                          <div class="single-image pt-50">
                               <img src="assets/images/preferences_mockup.png" alt="About">
                           </div> <!-- single image -->
                       </div> <!-- about image -->
@@ -771,11 +774,7 @@ and <span class="red">You</span> are in control ....</p>
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
-<script>
-$(document).ready(function() {
-   $('video').prop('muted',true).play()
-});
-</script>
+
 </body>
 
 </html>

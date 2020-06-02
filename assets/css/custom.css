@@ -53,7 +53,7 @@ video {
 /* Call To Action */
 
 .call-to-action {overflow:hidden; background:url("../images/calltoaction.jpg"); background-repeat: no-repeat; background-size:cover;}
-.calltoaction { background-color:rgba(0, 0, 0, 0.8); padding:40px 0; text-align:center;}
+.calltoaction { background-color:rgba(0, 0, 0, 0.9); overflow:hidden; padding:40px 0; text-align:center;}
 .calltoaction h3 {color:#fff; margin-bottom:0px; display:block; }
 .calltoaction h4 {color:#fff; line-height:38px; display:block;}
 .calltoaction img {width:160px;}

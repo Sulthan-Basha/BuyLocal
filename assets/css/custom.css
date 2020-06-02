@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {font-family: Roboto,sans-serif;}
 h1, h2, h3, h4, h5, h6 {color:#000;}
 @media (min-width: 1200px) {
@@ -7,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {color:#000;}
 }
 .red {color:red; text-transform:uppercase;}
 .green {color:green; text-transform:uppercase;}
-.navigation-bar {background-color:#fff; float:left; padding:10px 20px;}
+.navigation-bar {background-color:#fff; float:left; padding:0px 20px;}
 .header-section {overflow:hidden;}
 .header-section h3 {margin:20px 0px 10px;text-transform: uppercase;
     line-height: 42px; font-weight:600; font-size:26px; color:#000;}
@@ -394,3 +397,16 @@ bottom:0px;}
 }
 
 .faq-questions .preferences .single-image, .faq-questions .sendinvitation .single-image{width:80%;}
+
+
+/* Menu CSS */
+@media (min-width: 1200px) { 
+.header-section .main-logo img {width:200px; }
+
+}
+
+.header-section nav .navbar-nav li {line-height:60px; }
+.header-section nav .navbar-nav li a {color: #005d83;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;}

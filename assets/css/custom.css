@@ -400,13 +400,54 @@ bottom:0px;}
 
 
 /* Menu CSS */
-@media (min-width: 1200px) { 
+
 .header-section .main-logo img {width:200px; }
 
-}
-
-.header-section nav .navbar-nav li {line-height:60px; }
+.header-section nav .navbar-nav li a{height:100%;}
 .header-section nav .navbar-nav li a {color: #005d83;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;}
+	
+	.header-section nav .navbar-nav li a {
+  display: block;
+  margin: auto;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  z-index: 1; margin-right:0px !important; padding:28px 20px !Important;
+}
+.header-section nav .navbar-nav li a:after {
+  content: '';
+  display: block;
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  right: 1.25rem;
+  left: 1.25rem;
+  background-color: #005d83;
+  -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  z-index: -1;
+}
+.header-section nav .navbar-nav li.active a {color:#fff;}
+.header-section nav .navbar-nav li a:hover {
+  color: #fff;
+}
+.header-section nav .navbar-nav li.active a:after {
+   right: 0;
+  left: 0;
+  height: 100%; color:#fff;
+}
+.header-section nav .navbar-nav li a:hover:after {
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+.navigation-bar {transition:all .2s ease-in-out; overflow:hidden; height:80px;}
+.sticky.navigation-bar {height:68px; box-shadow:0 0 6px -2px #000;}
+.sticky.navigation-bar .navbar-nav li a {padding:25px 20px !important;}
